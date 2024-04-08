@@ -1,3 +1,29 @@
+# 1️⃣🐝🏎️ Node.js Submission
+> [index.ts](./src/main/nodejs/mmelk057/index.ts)
+
+**Time: 45s**
+
+steps to run:
+
+```shell
+./mnnw clean verify
+# only perform this step once
+./create_measurements.sh 1000000000
+./prepare_mmelk057.sh
+./calculate_average_mmelk057.sh
+```
+## Specs
+MacBook Pro M2 (12 cores, 8 performance, 4 efficiency) w/ 16GB
+
+## Implementation Details
+- multi-threading & parallelism; evenly distributed workload across all cores
+- efficient chunk-by-chunk byte-stream processing with minimal allocations
+- efficient float-parsing (less flexible, but more performant than built-in functions & capabilities)
+
+## Learnings
+- perfect hashing is an AOT strategy that mandates a predictable # of fixed keys. Number of keys falls within the range (0,10000]
+- tuning the GC settings may garner better performance
+
 # 1️⃣🐝🏎️ The One Billion Row Challenge
 
 _Status Feb 4: The final leaderboards [have been published](https://www.morling.dev/blog/1brc-results-are-in/). Congrats to all the winners, and a big thank you to everyone participating in this challenge as well as to everyone helping to organize it!_

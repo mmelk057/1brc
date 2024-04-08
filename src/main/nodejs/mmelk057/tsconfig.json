@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target" : "es2022",
+    "module" : "nodenext",
+    "esModuleInterop": false,
+    "strict" : true,
+    "alwaysStrict": true,
+    "noImplicitAny": true,
+    "useUnknownInCatchVariables": true,
+    "noUnusedLocals" : true,
+    "noUnusedParameters": true
+  }
+}
